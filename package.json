@@ -8,7 +8,7 @@
     "@commitlint/cli": "^17.4.2",
     "@commitlint/config-conventional": "^17.4.2",
     "@cspell/dict-de-ch": "^1.1.0",
-    "@fitbit/sdk": "~6.1.0",
+    "@fitbit/sdk": "^7.2.0-pre.0",
     "@fitbit/sdk-cli": "^1.7.3",
     "@types/jest": "^29.4.0",
     "@typescript-eslint/eslint-plugin": "^5.51.0",
@@ -36,15 +36,14 @@
     "ts-jest": "^29.0.5"
   },
   "fitbit": {
-    "appUUID": "8e1ff1dc-5118-4f53-bad5-fccfef64058c",
+    "appUUID": "8c71206e-8a36-4236-8293-7e888daa2119",
     "appType": "app",
     "appDisplayName": "OTP Auth",
     "iconFile": "resources/icon.png",
     "wipeColor": "#ffd502",
     "requestedPermissions": [],
     "buildTargets": [
-      "atlas",
-      "vulcan"
+      "hera"
     ],
     "i18n": {},
     "defaultLanguage": "en-US"
