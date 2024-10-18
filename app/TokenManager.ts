@@ -196,7 +196,6 @@ received before still pending "token messages" can disrupt an update. */
     this.hasUpdateStarted = false
     this.tokens.length = 0
     this.clockDrift = 0
-    this.storeTokensOnDevice = false
   }
 }
 
