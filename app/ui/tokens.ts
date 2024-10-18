@@ -54,6 +54,7 @@ export function setupTokenList(tokenManager: TokenManager) {
   }
 
   tokenList.length = tokenManager.getTokens().length
+  requestAnimationFrame(() => tokenList.redraw())
 }
 
 export function updateTokenList(tokenManager: TokenManager) {
@@ -79,6 +80,7 @@ export function updateTokenList(tokenManager: TokenManager) {
       tokenList.delegate.getTileInfo(i)
     )
   }
+  tokenList.redraw()
 }
 
 export function showClockSynchronizationMessage() {

@@ -27,7 +27,10 @@ interface VirtualTileListElement extends GraphicsElement {
 }
 
 interface DocumentMock {
-  elements: Record<string, GraphicsElement | VirtualTileListElement>
+  elements: Record<
+    string,
+    GraphicsElement | VirtualTileList<VirtualTileListItemInfo>
+  >
   getElementById: (
     id: string
   ) => GraphicsElement | VirtualTileListElement | undefined
@@ -71,7 +74,9 @@ const documentMock: DocumentMock = {
       },
       get length() {
         return (this as VirtualTileListElement)._length
-      }
+      },
+      // eslint-disable-next-line @typescript-eslint/no-empty-function
+      redraw: () => {}
     }
   },
   getElementById(this: DocumentMock, id) {

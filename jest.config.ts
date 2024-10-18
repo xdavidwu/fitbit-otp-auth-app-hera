@@ -13,6 +13,7 @@ const config: Config = {
   collectCoverageFrom: [
     "<rootDir>/{app,common,companion,resources,settings}/**/*.{ts,js}"
   ],
+  setupFiles: ["<rootDir>/app/__mocks__/globals.ts"],
   passWithNoTests: true,
   reporters: [["github-actions", { silent: false }], "default"],
   testEnvironment: "node",
