@@ -42,7 +42,7 @@ export function totp(
   const otp = dynamicTruncate(hash)
 
   // Step 3 in https://www.rfc-editor.org/rfc/rfc4226#section-5.3
-  const otpDigits = (otp % 10 ** digits).toString(10)
+  const otpDigits = (otp % 10 ** digits).toFixed(0)
   return padStartWithZeros(otpDigits, digits)
 }
 
